@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitácora Joaquín Matute</title>
+    <link rel="icon" href="Recursos/img/LogCapoTec.png" type="image/png">
+    <style>
+        html, body{
+            height: 100%;
+            margin: 0;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            background-color: #24292e; /* Fondo para que no se vea blanco al cargar */
+        }
+        header{
+            padding: 20px;
+            background-color: #1a3c40;
+            color: antiquewhite;
+        }
+        main{
+            flex: 1;
+            padding: 20px;
+            max-width: 800px; /* Reduje esto un poco para que las tarjetas no sean tan anchas */
+            margin: 0 auto;
+            background-color: #24292e;
+            color: white;
+        }
+        
+        /* --- CLASE SEMANA (TARJETAS) --- */
+        .semana {
+            background-color: #2d333b;
+            border: 1px solid #f653ac;
+            border-radius: 12px;
+            padding: 25px;
+            margin: 20px 0;
+            text-align: left;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+        .semana:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(246, 83, 172, 0.3);
+        }
+        .semana h2 {
+            color: #f653ac;
+            margin-top: 0;
+            border-bottom: 1px solid rgba(246, 83, 172, 0.3);
+            padding-bottom: 10px;
+        }
+        /* ------------------------------- */
+
+        footer{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 50px;
+            border-top: 1px solid #f653ac;
+            background-color: #1a3c40;
+            color: white;
+        }
+        @media(max-width: 600px){
+            footer{
+                flex-direction: column;
+                gap: 15px;
+                padding: 20px;
+            }
+        }
+        header h1{
+            color: rgb(246, 83, 172);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 
+                0 0 5px white,
+                0 0 10px rgb(241, 195, 246),
+                0 0 20px rgb(208, 72, 253),
+                0 0 40px rgba(172, 21, 155, 0.81);
+        }
+        footer img {
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+        footer img:hover{
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bitácora Segunda y tercera Unidad</h1>
+    </header>
+    <main>
+        <div class="semana">
+            <h2>Semana 1</h2>
+            <p>Contenido de tu primera semana aquí...</p>
+        </div>
+        <div class="semana">
+            <h2>Semana 2</h2>
+            <p>Contenido de tu segunda semana aquí...</p>
+        </div>
+    </main>
+    <footer>
+        <span>@juniormatt1207</span>
+        <img src="https://www.capouilliez.edu.gt/panel-alumnos/assets/img/brand/capouilliez.svg" height="50" width="200">
+    </footer>
+</body>
+</html>
