@@ -42,6 +42,15 @@
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
         }
+        .video-bitacora {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin: 20px 0;
+            box-shadow: 0 4px 12px rgba(136, 130, 130, 0.15);
+            background-color: #24292e;
+        }
         .semana:hover {
             transform: translateY(-5px);
             box-shadow: 0 8px 25px rgba(246, 83, 172, 0.3);
@@ -96,11 +105,32 @@
     <main>
         <div class="semana">
             <h2>Semana 1</h2>
-            <p>Contenido de tu primera semana aquí...</p>
+            <p>Consulta el detalle completo de la sesión en el visor interactivo</p>
+            <div class="contenedor-pdf"> 
+                <embed src="file:///C:/Users/junio/Downloads/Introducci%C3%B3n%20Arduino.pdf" 
+                type="application/pdf" 
+                width="100%" 
+                height="600px" />
+            </div>
         </div>
+
         <div class="semana">
             <h2>Semana 2</h2>
-            <p>Contenido de tu segunda semana aquí...</p>
+            <p>Video demostrativo de la práctica</p>
+            <video controls class="video-bitacora">
+                <source src="file:///C:\Users\junio\Downloads\Circuito.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="semana">
+            <h2>Semana 3</h2>
+            <p>A continuación se observa el diseño desarrollado</p>
+            <img src="file:///C:\Users\junio\Downloads\IMG_0352.mp4" class="imagen circuito">
+            <video controls class="video-bitacora">
+                <source src="file:///C:\Users\junio\Downloads\IMG_0352.mp4" type="video/mp4">
+            </video>
+
+
         </div>
     </main>
     <footer>
